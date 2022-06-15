@@ -1,16 +1,16 @@
 repos:
   - name: repo-1
-    title: My Repository 1
+    title: Repository 1
     image: favicon.png
     url: https://github.com/A-Baji/mk-docs-sample1.git
     branch: master
   - name: repo-2
-    title: My Repository 2
+    title: Repository 2
     image: favicon.png
     url: https://github.com/A-Baji/mk-docs-sample2.git
     branch: master
   - name: repo-3
-    title: My Repository 3
+    title: Repository 3
     image: favicon.png
     url: https://github.com/A-Baji/mk-docs-sample3.git
     branch: master
@@ -18,6 +18,5 @@ element_id: multirepo
 target_dir: docs
 repos_dir: docs-src
 index_tpl: index.tpl
-# extra_files:
-#     - styles.css
-#     - images/search.svg
+extra_files:
+    - styles.css
