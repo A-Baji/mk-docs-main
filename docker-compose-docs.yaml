@@ -1,4 +1,4 @@
-# docker-compose up --build
+# docker-compose -f ./docker-compose-docs.yaml up --build
 version: "2.4"
 services:
   docs:

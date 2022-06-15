@@ -1,0 +1,19 @@
+# docker-compose -f ./docker-compose-docs-build.yaml up --build
+version: "2.4"
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: docs.build.dockerfile
+    volumes:
+      - .:/main
+    command:
+      - bash
+      - -c
+      - |
+        pwd
+        git init
+        mkdocs-multirepo --init
+        mkdocs-multirepo --build
+        mv ./docs/index.html ./docs/docs.html
+        # tail -f /dev/null

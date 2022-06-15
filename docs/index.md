@@ -6,7 +6,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
 <body>
-    <div w3-include-html="indexx.html"></div> 
+    <div w3-include-html="docs.html"></div> 
     <script>
         w3IncludeHTML();
     </script>
