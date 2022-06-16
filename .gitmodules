@@ -1,9 +1,9 @@
-[submodule "/main/docs_src/repo-1"]
-	path = /main/docs_src/repo-1
+[submodule "docs_src/repo-1"]
+	path = docs_src/repo-1
 	url = https://github.com/A-Baji/mk-docs-sample1.git
-[submodule "/main/docs_src/repo-2"]
-	path = /main/docs_src/repo-2
+[submodule "docs_src/repo-2"]
+	path = docs_src/repo-2
 	url = https://github.com/A-Baji/mk-docs-sample2.git
-[submodule "/main/docs_src/repo-3"]
-	path = /main/docs_src/repo-3
+[submodule "docs_src/repo-3"]
+	path = docs_src/repo-3
 	url = https://github.com/A-Baji/mk-docs-sample3.git
