@@ -16,6 +16,7 @@ services:
         git init
         git submodule init
         git submodule update
+        git submodule foreach git pull origin master
         mkdocs-multirepo --init
         mkdocs-multirepo --build
         mv ./docs/index.html ./docs/docs.html
