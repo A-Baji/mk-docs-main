@@ -16,7 +16,7 @@ repos:
     branch: master
 element_id: multirepo
 target_dir: docs
-repos_dir: docs-src
+repos_dir: docs_src
 index_tpl: index.tpl
 extra_files:
     - styles.css

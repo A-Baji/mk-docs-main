@@ -1,4 +1,4 @@
-# docker-compose -f ./docker-compose-docs-build.yaml up --build
+# HOST_UID="$(id -u)" HOST_GID="$(id -g)" docker-compose -f ./docker-compose-docs-build.yaml up --build
 version: "2.4"
 services:
   docs:
@@ -7,6 +7,7 @@ services:
       dockerfile: docs.build.dockerfile
     volumes:
       - .:/main
+    user: '${HOST_UID}:${HOST_GID}'
     command:
       - bash
       - -c
