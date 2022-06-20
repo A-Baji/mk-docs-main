@@ -10,7 +10,7 @@ services:
       - sh
       - -c
       - |
-        pip install mkdocs mkdocs-cinder pymdown-extensions mdx_truly_sane_lists mkdocs-include-markdown-plugin jinja2==3.0.3
+        pip install mkdocs mkdocs-material pymdown-extensions mdx_truly_sane_lists mkdocs-include-markdown-plugin jinja2==3.0.3
         "$${@}"
     command:
       - ignored
