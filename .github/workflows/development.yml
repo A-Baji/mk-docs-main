@@ -18,7 +18,7 @@ jobs:
       - name: Add docs static artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: docs-static-datajoint-elements
+          name: docs-multi-repo-prototype
           path: site
           retention-days: 1
   publish-docs:
@@ -30,7 +30,7 @@ jobs:
       - name: Fetch docs static artifacts
         uses: actions/download-artifact@v2
         with:
-          name: docs-static-datajoint-elements
+          name: docs-multi-repo-prototype
           path: gh-pages/site
       - name: Commit documentation changes
         run: |
@@ -39,7 +39,8 @@ jobs:
           rm -R gh-pages-branch/*
           cp -r gh-pages/site/* gh-pages-branch/
           touch gh-pages-branch/.nojekyll
-          echo "elements.datajoint.org" > gh-pages-branch/CNAME
+          # echo "elements.datajoint.org" > gh-pages-branch/CNAME
+          echo gh-pages-branch/CNAME
           cd gh-pages-branch
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
