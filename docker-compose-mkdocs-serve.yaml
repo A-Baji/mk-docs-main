@@ -17,5 +17,6 @@ services:
       - |
         pwd
         mkdocs --version
+        pip show mkdocs-multirepo-plugin
         mkdocs serve -a 0.0.0.0:8080
         # tail -f /dev/null

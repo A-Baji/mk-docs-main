@@ -1,3 +1,11 @@
 site_name: My Docs
-theme:
-  name: material
+repo_url: https://github.com/A-Baji/mk-docs-main
+repo_name: Multi docs prototype
+theme: material
+
+plugins:
+  - multirepo
+  
+nav:
+  - Intro: 'index.md'
+  - Repo 1: '!import https://github.com/A-Baji/mk-docs-sample1?branch={mkdocs-multirepo-plugin}'
