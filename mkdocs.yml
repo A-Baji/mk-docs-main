@@ -4,8 +4,11 @@ repo_name: Multi docs prototype
 theme: material
 
 plugins:
-  - multirepo
-  
+  - multirepo:
+      cleanup: false
+
 nav:
   - Intro: 'index.md'
-  - Repo 1: '!import https://github.com/A-Baji/mk-docs-sample1?branch={mkdocs-multirepo-plugin}'
+  - Repo 1: '!import https://github.com/A-Baji/mk-docs-sample1'
+  - Repo 2: '!import https://github.com/A-Baji/mk-docs-sample2'
+  - Repo 3: '!import https://github.com/A-Baji/mk-docs-sample3'
