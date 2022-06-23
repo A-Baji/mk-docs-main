@@ -4,8 +4,9 @@ repo_name: Multi docs prototype
 theme: material
 
 plugins:
+  - search
   - multirepo:
-      cleanup: false
+      cleanup: true
 
 nav:
   - Intro: 'index.md'
