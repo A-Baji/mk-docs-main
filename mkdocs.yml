@@ -6,10 +6,20 @@ theme: material
 plugins:
   - search
   - multirepo:
-      cleanup: true
+      cleanup: false
+      repos:
+        - section: Repo 1
+          import_url: 'https://github.com/A-Baji/mk-docs-sample1'
+          edit_uri: /blob/master/
+        - section: Repo 2
+          import_url: 'https://github.com/A-Baji/mk-docs-sample2'
+          edit_uri: /blob/master/
+        - section: Repo 3
+          import_url: 'https://github.com/A-Baji/mk-docs-sample3'
+          edit_uri: /blob/master/
 
-nav:
-  - Intro: 'index.md'
-  - Repo 1: '!import https://github.com/A-Baji/mk-docs-sample1'
-  - Repo 2: '!import https://github.com/A-Baji/mk-docs-sample2'
-  - Repo 3: '!import https://github.com/A-Baji/mk-docs-sample3'
+# nav:
+#   - Hub: 'index.md'
+#   - Repo 1: '!import https://github.com/A-Baji/mk-docs-sample1'
+#   - Repo 2: '!import https://github.com/A-Baji/mk-docs-sample2'
+#   - Repo 3: '!import https://github.com/A-Baji/mk-docs-sample3'
