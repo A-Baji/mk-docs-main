@@ -5,6 +5,7 @@ theme: material
 
 plugins:
   - search
+  - mike
   - multirepo:
       cleanup: false
       repos:
@@ -21,6 +22,7 @@ plugins:
 extra:
   version:
     provider: mike
+
 
 # nav:
 #   - Hub: 'index.md'
