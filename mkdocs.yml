@@ -3,3 +3,10 @@ repo_url: https://github.com/A-Baji/mk-docs-main
 repo_name: Multi docs prototype
 theme:
   name: material
+
+  plugins:
+  - mike
+
+extra:
+  version:
+    provider: mike
