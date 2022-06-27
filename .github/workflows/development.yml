@@ -16,5 +16,5 @@ jobs:
           git fetch origin gh-pages --depth=1
           git config user.name A-Baji
           git config user.email bidabaji@gmail.com
-          mike deploy --push --force --update-aliases 0.1 latest
+          mike deploy --push --force --update-aliases 0.2 latest
           mike set-default --push latest
