@@ -12,6 +12,8 @@ jobs:
         with:
           python-version: 3.x
       - run: |
+          git config user.name A-Baji
+          git config user.email bidabaji@gmail.com
           pip install mkdocs-material mike
           mike deploy --push --update-aliases 0.1 latest
           mike set-default --push latest
