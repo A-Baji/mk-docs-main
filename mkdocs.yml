@@ -18,6 +18,10 @@ plugins:
           import_url: 'https://github.com/A-Baji/mk-docs-sample3'
           edit_uri: /blob/master/
 
+extra:
+  version:
+    provider: mike
+
 # nav:
 #   - Hub: 'index.md'
 #   - Repo 1: '!import https://github.com/A-Baji/mk-docs-sample1'
