@@ -12,6 +12,6 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          pip install mike
+          pip install mkdocs-material mike
           mike deploy --push --update-aliases 0.1 latest
           mike set-default --push latest
