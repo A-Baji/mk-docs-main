@@ -18,7 +18,6 @@ services:
         git submodule update
         git submodule foreach git pull origin master
         mkdocs-multirepo --init
-        mkdocs-multirepo --update
         mkdocs-multirepo --build
         mv ./docs/index.html ./docs/docs.html
         # tail -f /dev/null
