@@ -11,10 +11,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: |
-          pip install mkdocs-material mike
-          git fetch origin gh-pages --depth=1
-          git config user.name A-Baji
-          git config user.email bidabaji@gmail.com
-          mike deploy --push --force --update-aliases 0.3 latest
-          mike set-default --push latest
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force
