@@ -6,8 +6,3 @@ theme:
 
 plugins:
   - search
-  - mike
-
-extra:
-  version:
-    provider: mike
