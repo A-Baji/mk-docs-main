@@ -1,1 +1,98 @@
-{"config":{"indexing":"full","lang":["en"],"min_search_length":3,"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"","text":"Welcome to Docs Hub For full documentation visit mkdocs.org . Projects function includeHTML() { var z, i, elmnt, file, xhttp; /*loop through a collection of all HTML elements:*/ z = document.getElementsByTagName(\"*\"); for (i = 0; i < z.length; i++) { elmnt = z[i]; /*search for elements with a certain atrribute:*/ file = elmnt.getAttribute(\"w3-include-html\"); if (file) { /*make an HTTP request using the attribute value as the file name:*/ xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = \"Page not found.\";} /*remove the attribute, and call this function once more:*/ elmnt.removeAttribute(\"w3-include-html\"); includeHTML(); } } xhttp.open(\"GET\", file, true); xhttp.send(); /*exit the function:*/ return; } } }; includeHTML(); Commands 0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Project layout mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.","title":"Welcome to Docs Hub"},{"location":"#welcome-to-docs-hub","text":"For full documentation visit mkdocs.org .","title":"Welcome to Docs Hub"},{"location":"#projects","text":"function includeHTML() { var z, i, elmnt, file, xhttp; /*loop through a collection of all HTML elements:*/ z = document.getElementsByTagName(\"*\"); for (i = 0; i < z.length; i++) { elmnt = z[i]; /*search for elements with a certain atrribute:*/ file = elmnt.getAttribute(\"w3-include-html\"); if (file) { /*make an HTTP request using the attribute value as the file name:*/ xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = \"Page not found.\";} /*remove the attribute, and call this function once more:*/ elmnt.removeAttribute(\"w3-include-html\"); includeHTML(); } } xhttp.open(\"GET\", file, true); xhttp.send(); /*exit the function:*/ return; } } }; includeHTML();","title":"Projects"},{"location":"#commands","text":"0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.","title":"Commands"},{"location":"#project-layout","text":"mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.","title":"Project layout"}]}
+{
+    "config": {
+        "indexing": "full",
+        "lang": [
+            "en"
+        ],
+        "min_search_length": 3,
+        "prebuild_index": false,
+        "separator": "[\\s\\-]+"
+    },
+    "docs": [
+        {
+            "location": "",
+            "text": "Welcome to Docs Hub For full documentation visit mkdocs.org . Projects function includeHTML() { var z, i, elmnt, file, xhttp; /*loop through a collection of all HTML elements:*/ z = document.getElementsByTagName(\"*\"); for (i = 0; i < z.length; i++) { elmnt = z[i]; /*search for elements with a certain atrribute:*/ file = elmnt.getAttribute(\"w3-include-html\"); if (file) { /*make an HTTP request using the attribute value as the file name:*/ xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = \"Page not found.\";} /*remove the attribute, and call this function once more:*/ elmnt.removeAttribute(\"w3-include-html\"); includeHTML(); } } xhttp.open(\"GET\", file, true); xhttp.send(); /*exit the function:*/ return; } } }; includeHTML(); Commands 0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Project layout mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Welcome to Docs Hub"
+        },
+        {
+            "location": "#welcome-to-docs-hub",
+            "text": "For full documentation visit mkdocs.org .",
+            "title": "Welcome to Docs Hub"
+        },
+        {
+            "location": "#projects",
+            "text": "function includeHTML() { var z, i, elmnt, file, xhttp; /*loop through a collection of all HTML elements:*/ z = document.getElementsByTagName(\"*\"); for (i = 0; i < z.length; i++) { elmnt = z[i]; /*search for elements with a certain atrribute:*/ file = elmnt.getAttribute(\"w3-include-html\"); if (file) { /*make an HTTP request using the attribute value as the file name:*/ xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4) { if (this.status == 200) {elmnt.innerHTML = this.responseText;} if (this.status == 404) {elmnt.innerHTML = \"Page not found.\";} /*remove the attribute, and call this function once more:*/ elmnt.removeAttribute(\"w3-include-html\"); includeHTML(); } } xhttp.open(\"GET\", file, true); xhttp.send(); /*exit the function:*/ return; } } }; includeHTML();",
+            "title": "Projects"
+        },
+        {
+            "location": "#commands",
+            "text": "0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.",
+            "title": "Commands"
+        },
+        {
+            "location": "#project-layout",
+            "text": "mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "repo-1/latest/",
+            "text": "Welcome to SAMPLE1 For full documentation visit mkdocs.org . Commands TEST CHANGE ANOTHER TEST CHANGE 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Project layout mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Welcome to SAMPLE1"
+        },
+        {
+            "location": "repo-1/latest/#welcome-to-sample1",
+            "text": "For full documentation visit mkdocs.org .",
+            "title": "Welcome to SAMPLE1"
+        },
+        {
+            "location": "repo-1/latest/#commands",
+            "text": "TEST CHANGE ANOTHER TEST CHANGE 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.",
+            "title": "Commands"
+        },
+        {
+            "location": "repo-1/latest/#project-layout",
+            "text": "mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "repo-2/latest/",
+            "text": "Welcome to SAMPLE2 For full documentation visit mkdocs.org . Commands 0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Project layout mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "repo-2/latest/#welcome-to-sample2",
+            "text": "For full documentation visit mkdocs.org .",
+            "title": "Welcome to SAMPLE2"
+        },
+        {
+            "location": "repo-2/latest/#commands",
+            "text": "0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.",
+            "title": "Commands"
+        },
+        {
+            "location": "repo-2/latest/#project-layout",
+            "text": "mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "repo-3/latest/",
+            "text": "Welcome to SAMPLE3 For full documentation visit mkdocs.org . Commands 0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit. Project layout mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "repo-3/latest/#welcome-to-sample3",
+            "text": "For full documentation visit mkdocs.org .",
+            "title": "Welcome to SAMPLE3"
+        },
+        {
+            "location": "repo-3/latest/#commands",
+            "text": "0.1 0.2 0.3 mkdocs new [dir-name] - Create a new project. mkdocs serve - Start the live-reloading docs server. mkdocs build - Build the documentation site. mkdocs -h - Print help message and exit.",
+            "title": "Commands"
+        },
+        {
+            "location": "#repo-3/latest/project-layout",
+            "text": "mkdocs.yml # The configuration file. docs/ index.md # The documentation homepage. ... # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        }
+    ]
+}
